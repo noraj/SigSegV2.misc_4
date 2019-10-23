@@ -28,6 +28,7 @@ Flag format: sigsegv{flag}
 
 - Hint1: It's a scripting challenge right?
 - Hint2: exFAT
+- Hint3: buffer
 
 ## Integration
 
@@ -42,6 +43,10 @@ Just share the `.img` file.
 3. See there is a folder in a folder in a folder...
 4. See that all folders are numbers: int (hex) -> str (chr) gives a valid ASCII value
 5. Retrieve the complete path and transform it to ASCII text
+
+In order to accomplish step 5 you will need to script because the path is way too long,
+so `ls` or general library filesystem helpers can't handle it. You have to take
+a bufferized approach.
 
 `solve.sh` is automating steps 1. to 5.
 
