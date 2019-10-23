@@ -1,0 +1,50 @@
+# The long way
+
+## Version
+
+Date        | Author                  | Contact               | Version | Comment
+---         | ---                     | ---                   | ---     | ---
+23/10/2019  | noraj (Alexandre ZANNI) | noraj#0833 on discord | 1.0     | Document creation
+
+## Information
+
+Information displayed for CTF players:
+
++ **Name of the challenge** / **Nom du challenge**: `The long way`
++ **Category** / **Catégorie**: `Misc`
++ **Internet**: not needed
++ **Difficulty** / **Difficulté**: easy / facile
+
+### Description
+
+```
+You need to go deeper...
+But when you'll be deep the dark will surround you...
+
+Flag format: sigsegv{flag}
+```
+
+### Hints
+
+- Hint1: It's a scripting challenge right?
+- Hint2: exFAT
+
+## Integration
+
+Just share the `.img` file.
+
+## Solving
+
+### Author solution
+
+1. Identify the file system type of the `.img`: exFAT
+2. Mount it
+3. See there is a folder in a folder in a folder...
+4. See that all folders are numbers: int (hex) -> str (chr) gives a valid ASCII value
+5. Retrieve the complete path and transform it to ASCII text
+
+`solve.sh` is automating steps 1. to 5.
+
+## Flag
+
+`sigsegv{noooo0000000oooo0000000000oooooooo000000000000000ooooooOOOOOOOOOOOOOOOOo_liimit!}`
