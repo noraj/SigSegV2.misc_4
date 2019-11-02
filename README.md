@@ -23,7 +23,7 @@ But when you'll be deep the dark will surround you...
 
 Flag format: sigsegv{flag}
 
-author: noraj
+author: [noraj](https://pwn.by/noraj/)
 ```
 
 ### Hints
