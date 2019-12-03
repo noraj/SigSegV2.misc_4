@@ -1,4 +1,4 @@
-# The long way
+# exFAT extra long file path
 
 ## Version
 
@@ -55,3 +55,9 @@ a bufferized approach.
 ## Flag
 
 `sigsegv{noooo0000000oooo0000000000oooooooo000000000000000ooooooOOOOOOOOOOOOOOOOo_liimit!}`
+
+## SigSegV2
+
+A misc challenge that was available during SigSegV2 CTF (2019).
+
+20 teams on 36 flaged this challenge.
